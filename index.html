@@ -77,38 +77,45 @@
     </h1>
     <fieldset>
         <legend>Personal Information</legend>
+        <form>
         <label for="name">Name :</label>
-        <input type="text" placeholder="name" id="name">
+        <input type="text" placeholder="name" id="name" required>
         <label for="Lastname">Last Name :</label>
-        <input type="text" placeholder="Last name" id="Lastname">
+        <input type="text" placeholder="Last name" id="Lastname" required>
         <label for=""> Date</label>
-        <input type="date">
+        <input type="date" required>
         <label for="gender">Gender :</label>
         <input type="radio" name="male" value="M" > Male
         <input type="radio" name="male" value="f" > Female 
+        </form>
     </fieldset>
     <fieldset>
         <legend>Account Details</legend>
+        <form>
         <label for="Email">Email :</label>
-        <input type="text" name="Email" id="Email">
+        <input type="text" name="Email" id="email" required>
         <label for="pass">Password :</label>
-        <input type="text" name="pass" id="pass">
+        <input type="text" name="pass" id="pass" required>
         <label for="phn">Phone Number :</label>
-        <input type="text" name="phn" id="phn">
+        <input type="text" name="phn" id="phn" required>
         <label>Subscribe To News Letters</label>
         <input type="checkbox">
+        </form>
     </fieldset>
     <fieldset>
         <legend>Shipping Details</legend>
+        <form>
         <label for="address">Address :</label>
-        <textarea name="address" id="address"></textarea>
+        <textarea name="address" id="address" required></textarea>
         <label>Country :</label>
-        <input type="text">
+        <input type="text" required>
         <label>Zip Code :</label>
-        <input type="text">
+        <input type="text" required>
+        </form>
     </fieldset>
-    <input type="submit" value="Create Acc">
-    <input type="submit" value="Clear form">
+    <form>
+    <input type="submit" value="Create Acc" id="email" >
+    <input type="submit" value="Clear form"></form>
 
     <h1>
         Product Comparison
@@ -159,7 +166,73 @@
 
 
     </fieldset>
+    <fieldset>
+        <legend>Order Summary</legend>
+        <table border="2">
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+               <td>Wireless Headphones </td>
+               <td>2</td>
+               <td>$299.98</td>
+            </tr>
+            <tr>
+               <td>Shipping</td>
+               <td>-</td>
+               <td>$15.00</td>
+            </tr>
+            <tr>
+               <th colspan="2">Total</th>
+               <td>$314.92</td>
+            </tr>
+        </table>
+    </fieldset>
+    <form>
+        <input type="submit" value="complete purchase">
+    </form>
+    <h2>
+        Product Video
+    </h2>
+    <video src="others/sample video.mp4" width="350" height="320" controls></video>
+    <h2>
+        Product Audio Description
+    </h2>
+    <audio src="others/file_example_MP3_1MG.mp3" controls></audio>
 
+    <h2>
+        Contact Us
+    </h2>
+    <p>
+        Email : <a href="mailto:sufyanhasni432@gmail.com">sufyanhasni432@gmail.com</a> <br>
+        Phone : <a href="+92334346721">+92335345321</a> <br>
+        <address>
+            Address :123 common street <br> New york, NY 14001 
+        </address> <br> <br>
+        Here Is Our Location
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0406129393587!2d67.09663467443211!3d24.930686342445636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338b5cdbbc095%3A0x3bd5f577d2e87a59!2sSaylani%20Welfare%20Trust%2C%20Gulshan%20Branch!5e0!3m2!1sen!2s!4v1747313884216!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h4>
+        Check Out The Latest Video
+    </h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tq9gQG82aMU?si=pUAzoua_DFFkDjbH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>
+        Quick Links
+    </h3>
+    <ul>
+        <li><a href="index.html">Terms Of Services</a></li>
+        <li><a href="index.html">Terms Of Policy</a></li>
+        <li><a href="index.html">Return Policy</a></li>
+    </ul>
+    <p>
+        © 2023 MegaMart. All Reserved. 
+    </p>
+    <p>
+        Follow us on <a href="https://www.instagram.com">Social Media</a>
+    </p>
 
 </body>
 
