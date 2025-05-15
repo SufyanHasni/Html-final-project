@@ -32,7 +32,7 @@
     <h2>
         Feature Products
     </h2>
-    <table border="1">
+    <table border="1" width="950px">
         <tr>
             <th>Product</th>
             <th>Description</th>
@@ -51,7 +51,7 @@
             </td>
             <td><del>190$</del> <br> <br>150$</td>
             <td>High Stock </td>
-            <td><input type="submit" value="Add To Cart"> <p>Available quantites 15</p></td>
+            <td> <form><input type="submit" value="Add To Cart"> <p>Available quantites 15</p></form></td>
         </tr>
         <tr>
 
@@ -75,9 +75,9 @@
     <h1>
         Create New Account
     </h1>
+    <form>
     <fieldset>
         <legend>Personal Information</legend>
-        <form>
         <label for="name">Name :</label>
         <input type="text" placeholder="name" id="name" required>
         <label for="Lastname">Last Name :</label>
@@ -87,11 +87,10 @@
         <label for="gender">Gender :</label>
         <input type="radio" name="male" value="M" > Male
         <input type="radio" name="male" value="f" > Female 
-        </form>
+        
     </fieldset>
     <fieldset>
         <legend>Account Details</legend>
-        <form>
         <label for="Email">Email :</label>
         <input type="text" name="Email" id="email" required>
         <label for="pass">Password :</label>
@@ -100,22 +99,19 @@
         <input type="text" name="phn" id="phn" required>
         <label>Subscribe To News Letters</label>
         <input type="checkbox">
-        </form>
     </fieldset>
     <fieldset>
         <legend>Shipping Details</legend>
-        <form>
         <label for="address">Address :</label>
         <textarea name="address" id="address" required></textarea>
         <label>Country :</label>
         <input type="text" required>
         <label>Zip Code :</label>
         <input type="text" required>
-        </form>
     </fieldset>
-    <form>
     <input type="submit" value="Create Acc" id="email" >
-    <input type="submit" value="Clear form"></form>
+    <input type="reset" value="Clear form">
+    </form>
 
     <h1>
         Product Comparison
@@ -151,20 +147,19 @@
     <h2>
         Payment Procedure
     </h2>
+    <form>
     <fieldset>
         <legend>Payment Information</legend>
         <label>
             card type :
         </label>
-        <input type="radio" name="1"> Visa 
+        <input type="radio" name="1" > Visa 
         <input type="radio" name="1"> Mastercard
         <input type="radio" name="1"> American Express <br>
         <label>Card Number</label>
-        <input type="text" name="cardnumber" id="">
+        <input type="text" name="cardnumber" id="" required>
         <label>Expiry Date</label>
         <input type="date">
-
-
     </fieldset>
     <fieldset>
         <legend>Order Summary</legend>
@@ -190,7 +185,6 @@
             </tr>
         </table>
     </fieldset>
-    <form>
         <input type="submit" value="complete purchase">
     </form>
     <h2>
